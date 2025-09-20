@@ -2,19 +2,20 @@
 <html>
 <head>
     <title>My Personal Webpage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Shaikenov Danial</h1>
-    <h2>Future Backend Developer (Python)😎😎😎</h2>
+    <h1 id="main-title">Shaikenov Danial</h1>
+    <h2 class="subtitle">Future Backend Developer (Python)</h2>
 
-    <p>
+    <p class="intro-text">
         Hi  My name is Danial, I am 19 years old.  
         I study web technologies and dream of becoming a professional backend developer.  
-        My main stack: <b>Python + FastAPI + PostgreSQL</b>. 🤓 
+        My main stack: <b>Python + FastAPI + PostgreSQL</b>.  
     </p>
 
-    <h3>My Tech Skills😲😲</h3>
-    <ol>
+    <h3 class="section-heading">My Tech Skills</h3>
+    <ol class="skills-list">
         <li>Python (FastAPI, OOP, asyncio)</li>
         <li>PostgreSQL & Redis</li>
         <li>Celery & RabbitMQ</li>
@@ -22,8 +23,8 @@
         <li>Git</li>
     </ol>
 
-    <h3>My Hobbies👀👀</h3>
-    <ul>
+    <h3 class="section-heading">My Hobbies</h3>
+    <ul class="hobby-list">
         <li>Programming </li>
         <li>Reading books </li>
         <li>Watching anime </li>
@@ -31,8 +32,8 @@
         <li>Sport</li>
     </ul>
 
-    <h3>My Daily Schedule👌</h3>
-    <table border="1" cellpadding="5">
+    <h3 class="section-heading">My Daily Schedule</h3>
+    <table id="schedule-table" border="1" cellpadding="5">
         <tr>
             <th>Time</th>
             <th>Activity</th>
@@ -54,34 +55,34 @@
             <td>Sleep-_-</td>
         </tr>
     </table>
-        <h1>❤️‍🔥My GF❤️‍🔥</h1>
-    <div style="display:flex; gap:20px;">
-        <img src="фотка1.jpg" alt="Photo 1" style="width:200px;">
-        <img src="фотка2.jpg" alt="Photo 2" style="width:350px;">
-        <img src="фотка3.jpg" alt="Photo 3" style="width:350px;">
+
+    <h1 class="section-heading">❤️‍🔥My GF❤️‍🔥</h1>
+    <div id="photos">
+        <img src="фотка1.jpg" alt="Photo 1" class="featured-image">
+        <img src="фотка2.jpg" alt="Photo 2" class="featured-image">
+        <img src="фотка3.jpg" alt="Photo 3" class="featured-image">
     </div>
 
-    <ul>
-            <li><a href="https://t.me/south077"><h2> tg altushki</h2></a></li>
-            <li><a href="https://music.apple.com/ru/new"><h2>Music</h2> </a></li>
-            <li><a href="https://chatgpt.com/"><h2> Chat GPT </h2> </a></li>
+    <ul class="links">
+        <li><a href="https://t.me/south077" class="nav-link">tg altushki</a></li>
+        <li><a href="https://music.apple.com/ru/new" class="nav-link">Music</a></li>
+        <li><a href="https://chatgpt.com/" class="nav-link">Chat GPT</a></li>
     </ul><br>
-        <h2>Input information</h2>
-    <form>
+
+    <h2 class="section-heading">Input information</h2>
+    <form id="user-form">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
+        <input type="text" id="name" class="form-input" name="name"><br><br>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
+        <input type="email" id="email" class="form-input" name="email"><br><br>
 
         <label for="color">Favorite color:</label>
-        <input type="color" id="color" name="color"><br><br>
+        <input type="color" id="color" class="form-input" name="color"><br><br>
 
-        <button type="submit">submit</button>
+        <button type="submit" class="submit-btn">submit</button>
     </form>
     <br><br>
-     <button onclick="alert('Вот и все-_-')">END</button>
+    <button class="end-btn" onclick="alert('Вот и все-_-')">END</button>
 </body>
 </html>
-
-
