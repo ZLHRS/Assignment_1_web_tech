@@ -1,88 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Webpage</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Danial's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 id="main-title">Shaikenov Danial</h1>
-    <h2 class="subtitle">Future Backend Developer (Python)</h2>
+  <div class="grid-layout">
 
-    <p class="intro-text">
-        Hi  My name is Danial, I am 19 years old.  
-        I study web technologies and dream of becoming a professional backend developer.  
-        My main stack: <b>Python + FastAPI + PostgreSQL</b>.  
-    </p>
+    <!-- HEADER -->
+    <header class="header">
+      <div class="logo">Danial Shaikenov</div>
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <h3 class="section-heading">My Tech Skills</h3>
-    <ol class="skills-list">
-        <li>Python (FastAPI, OOP, asyncio)</li>
-        <li>PostgreSQL & Redis</li>
-        <li>Celery & RabbitMQ</li>
-        <li>Docker & CI/CD</li>
-        <li>Git</li>
-    </ol>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2>About Me</h2>
+      <p>Future Backend Developer.</p>
+      <p>Stack: Python, FastAPI, PostgreSQL</p>
+    </aside>
 
-    <h3 class="section-heading">My Hobbies</h3>
-    <ul class="hobby-list">
-        <li>Programming </li>
-        <li>Reading books </li>
-        <li>Watching anime </li>
-        <li>Playing games </li>
-        <li>Sport</li>
-    </ul>
+    <!-- MAIN -->
+    <main class="main-content">
 
-    <h3 class="section-heading">My Daily Schedule</h3>
-    <table id="schedule-table" border="1" cellpadding="5">
-        <tr>
-            <th>Time</th>
-            <th>Activity</th>
-        </tr>
-        <tr>
-            <td>13:00-14:00</td>
-            <td>Wake up & Breakfast</td>
-        </tr>
-        <tr>
-            <td>14:00 - 20:00</td>
-            <td>Study / Coding practice</td>
-        </tr>
-        <tr>
-            <td>20:00 - 21:00</td>
-            <td>Workout at the gym</td> 
-        </tr>
-        <tr>
-            <td>22:00 - 13:00</td>
-            <td>Sleep-_-</td>
-        </tr>
-    </table>
+      <!-- CARDS -->
+      <section class="card-row" id="skills">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.wf-RR7khvodc3ezu46yQPQHaEK?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Python">
+          <h3>Python + FastAPI</h3>
+          <p>Building APIs and microservices</p>
+          <a href="https://fastapi.tiangolo.com/" target="_blank"><button>Learn More</button></a>
+        </div>
+        <div class="card">
+          <img src="https://viswaonlinetrainings.com/wp-content/uploads/2024/08/PostgreSQL.png" alt="PostgreSQL">
+          <h3>PostgreSQL</h3>
+          <p>Database management</p>
+          <a href="https://www.postgresql.org/" target="_blank"><button>Docs</button></a>
+        </div>
+        <div class="card">
+          <img src="https://th.bing.com/th/id/R.a2f46e02ea8f7f8af6c6989687bd6b52?rik=0keMY0UQso%2b1kg&riu=http%3a%2f%2flogz.io%2fwp-content%2fuploads%2f2016%2f01%2fdocker-facebook.png&ehk=vi9I6O3dyq5d2%2bOmy8ZDLrWQv2LbFNVfkFhTEcajShM%3d&risl=&pid=ImgRaw&r=0" alt="Docker">
+          <h3>Docker</h3>
+          <p>Deployment & containers</p>
+          <a href="https://docs.docker.com/" target="_blank"><button>Docs</button></a>
+        </div>
+      </section>
+        <br><br><br>
+      <!-- GALLERY -->
+      <section class="gallery" id="gallery">
+        <img src="фотка1.jpg" alt="Gallery 1">
+        <img src="фотка2.jpg" alt="Gallery 2">
+        <img src="фотка3.jpg" alt="Gallery 3">
+      </section>
+      <br><br><br><br><br><br><br><br>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <p>© 2025 Shaikenov Danial | <a href="https://t.me/zlhrs" target="_blank">Telegram</a></p>
+    </footer>
 
-    <h1 class="section-heading">❤️‍🔥My GF❤️‍🔥</h1>
-    <div id="photos">
-        <img src="фотка1.jpg" alt="Photo 1" class="featured-image">
-        <img src="фотка2.jpg" alt="Photo 2" class="featured-image">
-        <img src="фотка3.jpg" alt="Photo 3" class="featured-image">
-    </div>
-
-    <ul class="links">
-        <li><a href="https://t.me/south077" class="nav-link">tg altushki</a></li>
-        <li><a href="https://music.apple.com/ru/new" class="nav-link">Music</a></li>
-        <li><a href="https://chatgpt.com/" class="nav-link">Chat GPT</a></li>
-    </ul><br>
-
-    <h2 class="section-heading">Input information</h2>
-    <form id="user-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" class="form-input" name="name"><br><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" class="form-input" name="email"><br><br>
-
-        <label for="color">Favorite color:</label>
-        <input type="color" id="color" class="form-input" name="color"><br><br>
-
-        <button type="submit" class="submit-btn">submit</button>
-    </form>
-    <br><br>
-    <button class="end-btn" onclick="alert('Вот и все-_-')">END</button>
+  </div>
 </body>
 </html>
